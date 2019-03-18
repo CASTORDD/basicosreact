@@ -21,8 +21,7 @@ class Aplicacion extends Component  {
           titulo="Nuestra tienda virtual"
         />
         <Productos 
-        productos={productos}
-          
+          productos={productos}
         />
         <Footer />
       </div>
