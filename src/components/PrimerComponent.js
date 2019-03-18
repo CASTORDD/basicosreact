@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
+import Header from './Header';
 
 class PrimerComponente extends Component  {
   render(){
-    return <p>Desde mi primer componente</p>
+    return (
+      <div>
+        <Header />
+        <p>Desde mi primer componente</p>
+      </div>
+    )
   }
 }
 
