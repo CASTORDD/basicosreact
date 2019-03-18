@@ -4,6 +4,13 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+//React sin JSX
+const titulo = React.createElement(
+  'h1',
+  {id: 'titulo', className: 'encabezado'},
+  'Hola Mundo'
+);
+
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
