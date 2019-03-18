@@ -2,8 +2,10 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <h1>Nombre del sitio</h1>
+    <header>
+      <h1>Tienda virtual</h1>
+    </header>
   )
 }
 
-export default Header;
+export default Header
