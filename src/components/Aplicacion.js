@@ -5,8 +5,11 @@ import Footer from './Footer';
 import Header from './Header';
 
 class Aplicacion extends Component  {
-  
-  render(){
+  state = {
+    productos: []
+  }
+
+  componentDidMount(){
     const productos = [
       {nombre: 'Libro', precio: 200},
       {nombre: 'Disco', precio: 150},
@@ -14,14 +17,21 @@ class Aplicacion extends Component  {
       {nombre: 'Arroz', precio: 50},
       {nombre: 'Pera', precio: 15},
     ]
-
+    setTimeout( () => {
+      this.setState({
+        productos : productos
+      });
+    }, 3000);
+  }
+  
+  render(){
     return (
       <div>
         <Header 
           titulo="Nuestra tienda virtual"
         />
         <Productos 
-          productos={productos}
+          productos={this.state.productos}
         />
         <Footer />
       </div>
